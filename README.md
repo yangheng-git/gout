@@ -616,7 +616,7 @@ func responseUseExample() {
 	//fail请求
 	failRes := new(map[string]interface{})
 	err = gout.GET(":8080/fail").ResponseUse(demoResponse()).BindJSON(&failRes).Do()
-	log.Printf("fail请求  -->   响应 %s  \n  err  %s \n ", successRes, err)
+	log.Printf("fail请求  -->   响应 %s  \n  err  %s \n ", failRes, err)
 }
 
 type Result struct {
